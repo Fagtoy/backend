@@ -102,6 +102,9 @@ jobs:
           name: coverage
           path: .coverage
 
+      - name: Pull python-coverage-comment-action-data branch
+        run: git pull origin python-coverage-comment-action-data --rebase
+
       - name: Write coverage comment
         id: coverage_comment
         uses: py-cov-action/python-coverage-comment-action@v3
