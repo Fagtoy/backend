@@ -64,7 +64,7 @@ bp = HealthcheckBlueprint('healthcheck', __name__)
 
 @bp.record
 def init_logger(state):
-    bp.LOGGER = log.get_logger('healthcheck', '{}/healthcheck.log'.format(state.app.config.d_logs))
+    bp.LOGGER = log.get_logger('healthcheck', f'{state.app.config.d_logs}/healthcheck.log')
 
 
 @bp.before_request
