@@ -42,6 +42,7 @@ from parseAndPopulate.resolvers.submodule import SubmoduleResolver
 from parseAndPopulate.resolvers.yang_version import YangVersionResolver
 
 
+# test
 class TestResolversClass(unittest.TestCase):
     def setUp(self) -> None:
         self.logger = logging.getLogger('test')
